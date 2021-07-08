@@ -235,7 +235,7 @@ Run **java -version** at the prompt (regardless of the subdirectory you’re in)
    verify the Java installation by closing your old Powershell and running **java
    -version** in a new Powershell.
    
-###Set the Path
+### Set the Path
    If your system still can’t run **java -version** in Powershell, you must add the
    appropriate **bin** directory to your *path*. The path tells the operating system
    where to find executable programs. For example, something like this goes
@@ -259,7 +259,7 @@ Run **java -version** at the prompt (regardless of the subdirectory you’re in)
 
    Close your old Powershell window and start a new one to see the change.
    
-###Install Scala
+### Install Scala
    In this book, we use Scala version 2.11, the latest available at the time. In
    general, the code in this book should also work on versions more recent
    than 2.11. TODO: Are we using Scala 3? (version 2.11?)
@@ -290,7 +290,7 @@ Run **java -version** at the prompt (regardless of the subdirectory you’re in)
    installation.
 
 TODO: Where will ex code be listed? 
-###Source Code for the Book
+### Source Code for the Book
    We include a way to easily test the Scala exercises in this book with a
    minimum of configuration and download. Follow the links for the book’s
    source code at https://github.com/EffectOrientedProgramming/book/Examples and download the package (this places it
@@ -305,7 +305,7 @@ TODO: Where will ex code be listed?
    copy or drag the examples directory into the C:\AtomicScala directory.
    Now the AtomicScala directory contains all the examples from the book. 
 
-###Set Your CLASSPATH
+### Set Your CLASSPATH
    To run the examples, you must first set your CLASSPATH, an environment
    variable used by Java (Scala runs atop Java) to locate code files. If you want
    to run code files from a particular directory, you must add that new
@@ -393,7 +393,7 @@ When you look at your **Scala** directory, it should contain:
 
 > bin doc examples lib man misc src
 
-###Set the Path
+### Set the Path
 Now add the appropriate **bin** directory to your *path*. Your path is usually
 stored in a file called **.profile** or **.bash_profile**, located in your home
 directory. We assume that you’re editing **.bash_profile** from this point
@@ -425,7 +425,7 @@ installation.
 
 
 TODO: Correct Download Location?
-###Source Code for the Book
+### Source Code for the Book
 We include a way to easily test the Scala exercises in this book with a
 minimum of configuration and download. Follow the links for the book’s
 source code at **AtomicScala.com** and download **atomic-scala-examples-master.zip** into a convenient location on your computer.
@@ -438,7 +438,7 @@ using the directions above (for installing Scala).
 The ~/AtomicScala directory now contains all the examples from the book
 in the subdirectory examples.
 
-###Set Your CLASSPATH
+### Set Your CLASSPATH
 The CLASSPATH is an environment variable used by Java (Scala runs atop
 Java) to locate Java program files. If you want to place code files in a new
 directory, you must add that new directory to the CLASSPATH.
@@ -470,7 +470,7 @@ In this book, we use Scala version 2.11, the latest available at the time. In
 general, the examples in this book should also work on versions more
 recent than 2.11.
 
-###Standard Package Installation
+### Standard Package Installation
 **Important**: The standard package installer might not install the most
 recent version of Scala. There is often a significant delay between a release
 of Scala and its inclusion in the standard packages. If the resulting version
@@ -493,7 +493,7 @@ incompatible with this book).
 Now follow the instructions in the next section to ensure that both Java
 and Scala are installed and that you have the right versions.
 
-###Verify Your Installation
+### Verify Your Installation
 Open a shell (see `The Shell`) and type “**java -version**” at the prompt. You
 should see something like the following (Version numbers and actual text
 will vary):
@@ -510,7 +510,7 @@ Test the Scala installation by starting a shell and typing “scala -version.”
 This should produce Scala version information; if it doesn’t, add Scala to
 your path using the following instructions.
 
-###Configure your Editor
+### Configure your Editor
 If you already have an editor that you like, skip this section. If you chose to
 install Sublime Text 2, as we described in `Editors`, you must tell Linux where
 to find the editor. Assuming you have installed Sublime Text 2 in your
@@ -521,7 +521,7 @@ home directory, create a symbolic link with the shell command:
 This allows you to edit a file named **filename** using the command:
 > sublime filename
 
-###Set the Path
+### Set the Path
 If your system can’t run **java -version** or **scala -version** from the console
 (terminal) command line, you might need to add the appropriate **bin**
 directory to your path.
@@ -562,7 +562,7 @@ installation.
 If you get the desired version information from both **java -version** and
 **scala -version**, skip the next section.
 
-###Install Recent Version from tgz File
+### Install Recent Version from tgz File
 Try running **java -version** to see if you already have Java 1.6 or greater
 installed. If not, go to **www.java.com/getjava**, click “Free Java Download”
 and scroll down to the download for “Linux” (there is also a “Linux RPM”
@@ -598,7 +598,7 @@ Reset your **PATH** with the command:
 run java -version and see a version number that agrees with what you’ve
 just installed.
 
-###Install Scala
+### Install Scala
 The main download site for Scala is **www.scala-lang.org/downloads**. Scroll
 through this page to locate the desired release number, and then
 download the one marked “Unix, Mac OSX, Cygwin.” The file has an
@@ -625,7 +625,7 @@ run scala -version and see a version number that agrees with what you’ve
 just installed.
 
 TODO: Where will example code be listed?
-###Source Code for the Book
+### Source Code for the Book
 We include a way to easily test the Scala exercises in this book with a
 minimum of configuration and download. Follow the links for the book’s
 source code at AtomicScala.com into a convenient location on your
@@ -640,7 +640,7 @@ examples into the AtomicScala directory. The ~/AtomicScala directory
 now contains all the examples from the book in the subdirectory
 examples.
 
-###Set Your CLASSPATH
+### Set Your CLASSPATH
 Note: Sometimes (on Linux, at least) you don’t need to set the CLASSPATH
 at all and everything still works right. Before setting your CLASSPATH, try
 running the testall.sh script (see below) and see if it’s successful.
@@ -671,9 +671,9 @@ things that we explain later in the book
 
 
 
-##Install Coursier
+## Install Coursier
 
-###Windows Coursier
+### Windows Coursier
 
 To download **Coursier**, use the following instructions:
 
@@ -686,7 +686,7 @@ To download **Coursier**, use the following instructions:
 To update **Coursier** in the future, use the command:
 > cs update cs
 
-###Macintosh Coursier
+### Macintosh Coursier
 
 To download **Coursier**, and set the **PATH**, use the following instructions:
 > curl -fLo cs https://git.io/coursier-cli-"$(uname | tr LD ld)" <br />
@@ -701,7 +701,7 @@ To download **Coursier**, and set the **PATH**, use the following instructions:
 To update **Coursier** in the future, use the command:
 > cs update cs
 
-###Linux Coursier
+### Linux Coursier
 
 To download **Coursier**, and set the **PATH**, we will be using `curl`. If your
 computer already has `curl`, then you can skip to the next set of instructions.
@@ -730,7 +730,7 @@ later, simply run the command:
 This will trigger several downloads that may take a few minutes. 
 
 
-#Introduction to Scala
+# Introduction to Scala
 ## Running Scala
 The Scala interpreter is also called the REPL (for Read-Evaluate-Print-Loop).
 You get the REPL when you type **scala** by itself on the command line. You
@@ -765,7 +765,7 @@ capable of representing.
 Find out more by typing **:help** at the Scala prompt. To exit the REPL, type:
 >scala> :quit
 
-##Comments
+## Comments
 A *Comment* is illuminating text that is ignored by Scala. There are two
 forms of comment. The // (two forward slashes) begins a comment that
 goes to the end of the current line:
@@ -796,7 +796,7 @@ programmers often forget to update comments, so it’s a good practice to
 use comments judiciously, mainly for highlighting tricky aspects of your
 code.
 
-##Scripting
+## Scripting
 A *script* is a file filled with Scala code that runs from the command-line
 prompt. Suppose you have a file named **myfile.scala** containing a Scala
 script. To execute that script from your operating system shell prompt,
@@ -840,7 +840,7 @@ You should see:
 >Hello, Scala!
 
 Now we’re ready to start learning about Scala.
-##Values
+## alues
 A *value* holds a particular type of information. You define a value like this:
 >val name = initialization
 
