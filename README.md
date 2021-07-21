@@ -60,7 +60,6 @@ Further instructions are found [here](https://docs.scala-lang.org/scala3/getting
 ## 1. Install Coursier
 
 The process for installing Coursier is different for each operating system.
-In each case, the installation process also sets the **PATH** {{ Is this correct? }}.
 
 ### Windows
 
@@ -157,7 +156,6 @@ In the command prompt, input the index of the file to run:
 > runMain (filename)
 ```
 
-To run a program in a package, use the format **runMain packagename.mainName**.
 For example, to run `helloWorld`, the main function of the HelloWorld object located in
 the directory `Examples`, input the following to the sbt shell:
 
@@ -172,17 +170,19 @@ or
 > runMain helloWorld
 ```
 
+To run a program in a package, use the format **runMain packagename.mainName**.
+
 ## Repeating a Command
 
-If you precede any command with `~`, sbt will automatically run that command whenever there is a change to the files.
+If you precede any command with `~`, sbt automatically runs that command whenever there is a change to the associated files.
 For example:
 
 ```
 > ~runMain helloWorld
 ```
 
-Will automatically runs `helloWorld` whenever there is a change to the file.
-Pressing enter stops the automated command.
+automatically runs `helloWorld`.
+Pressing the `ENTER` key stops the automated command.
 
 ## Exiting
 
@@ -208,4 +208,4 @@ Download the [zipped code repository](https://github.com/EffectOrientedProgrammi
 
 ## Visual Studio Code (VSCode)
 
-TBD
+TODO
