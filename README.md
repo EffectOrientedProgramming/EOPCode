@@ -65,7 +65,7 @@ Run the following commands (**Note:** Use cmd.exe, not Powershell):
 
 ### Macintosh
 
-At a command prompt, run the following:
+Run the following commands:
 
 ```
 > curl -fLo cs https://git.io/coursier-cli-"$(uname | tr LD ld)"
@@ -119,31 +119,14 @@ Once installation is complete you can run a few simple tests to ensure the insta
 2. TEST 2 TBD
 3. etc.
 
+# Using SBT
 
-# Installing an IDE
-
-## IntelliJ IDEA
-
-1. Follow the instructions [here](https://www.jetbrains.com/help/idea/installation-guide.html)
-   to install IntelliJ IDEA.
-
-2. Download the [zipped code
-   repository](https://github.com/EffectOrientedProgramming/book/Examples)
-   and [unzip it](#unpacking-a-zip-archive).
-
-3. Start IntelliJ IDEA, and select the `File | Open` menu item.  Navigate to
-   where you unzipped the repository and open the `build.sbt` file.
-
-4. Go to the menu and select:
-   `View | Tool Windows | sbt`. Right-click the directory name, and reload the sbt project.
-   This should ensure your machine has all necessary plugins and extensions installed.
-
-5. In a terminal, run the command:
+1. In a terminal, run the command:
   > sbt
 
 This will open the sbt shell. From there, you can run the programs in your project.
 
-6. Here are several useful commands when using the sbt shell:
+2. Here are several useful commands when using the sbt shell:
 
 > compile
 
@@ -179,8 +162,25 @@ sbt will run the `~`'d command automatically.
 This will automatically run helloWorld whenever there is a change to the file system.
 Pressing enter into the command line will stop the automated command.
 
-7. To exit the sbt shell, press **ctrl + d**
+3. To exit the sbt shell, press **ctrl + d**
 
+# Installing an IDE
+
+## IntelliJ IDEA
+
+1. Follow the instructions [here](https://www.jetbrains.com/help/idea/installation-guide.html)
+   to install IntelliJ IDEA.
+
+2. Download the [zipped code
+   repository](https://github.com/EffectOrientedProgramming/book/Examples)
+   and [unzip it](#unpacking-a-zip-archive).
+
+3. Start IntelliJ IDEA, and select the `File | Open` menu item.  Navigate to
+   where you unzipped the repository and open the `build.sbt` file.
+
+4. Go to the menu and select:
+   `View | Tool Windows | sbt`. Right-click the directory name, and reload the sbt project.
+   This should ensure your machine has all necessary plugins and extensions installed.
 
 ## Visual Studio Code (VSCode)
 
