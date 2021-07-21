@@ -20,9 +20,7 @@ This repository includes tests to verify that the code in the book is correct.
   - [IntelliJ IDEA](#intellij-idea)
   - [Visual Studio Code (VSCode)](#visual-studio-code-vscode)
 
-<font size="1">
-[TOC Generator](https://remarkablemark.org/blog/2020/12/06/markdown-table-of-contents-generator/)
-</font>
+([TOC Generator](https://remarkablemark.org/blog/2020/12/06/markdown-table-of-contents-generator/)).
 
 # Basic Steps
 
