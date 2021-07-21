@@ -16,6 +16,7 @@ This repository includes tests to verify that the code in the book is correct.
     - [Linux](#linux)
   - [2. Update Coursier](#2-update-coursier)
   - [3. Install Tools Using Coursier](#3-install-tools-using-coursier)
+- [Using SBT](#using-sbt)
 - [Installing an IDE](#installing-an-ide)
   - [IntelliJ IDEA](#intellij-idea)
   - [Visual Studio Code (VSCode)](#visual-studio-code-vscode)
