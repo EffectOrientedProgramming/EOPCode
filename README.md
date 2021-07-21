@@ -5,49 +5,24 @@ If you want to experiment with the code examples from the book [Effect Oriented 
 These examples are automatically extracted directly from the book. This repository
 includes tests to verify that the code in the book is correct.
 
-TODO: Correct Download Location?
-> **NOTE** If you are planning to solve the exercises after reading each section
-> (and you should), you can get the exercises AND all these examples together by
-> installing [the educational course](https://github.com/EffectOrientedProgramming/book/Examples).
-> If you're going to solve the exercises, you can just install the course, and you
-> don't need to install the examples from this repository.
-
-
-
 ## Contents
-- [Introduction](#introduction)
-- [Command-Line Basics](#command-line-basics)
-    * [Editors](#editors)
-    * [The Shell](#the-shell)
-        + [Starting a Shell](#starting-a-shell)
-        + [Directories](#directories)
-        + [Basic Shell Operations](#basic-shell-operations)
-        + [Unpacking a Zip Archive](#unpacking-a-zip-archive)
-- [Installation](#installation)
-    * [Windows](#windows)
-    * [Macintosh](#macintosh)
-    * [Linux](#linux)
-    * [Coursier](#install-coursier)
-- [Introduction to Scala](#introduction-to-scala)
-- [Compiling and Running Programs in IntelliJ IDEA](#compiling-and-running-programs-in-intellij-idea)
-- [Appendix B: Command-Line Hello World](#appendix-b-command-line-hello-world)
-    * [Packages](#packages)
-- [Appendix C: Testing](#appendix-d-testing)
 
-# Introduction
+(Generated using a tool when the rewrite is far along enough).
 
-The easiest way to access and experiment with the book examples is to
-clone/download this repository and open it with IntelliJ IDEA. This README will also cover how to 
-download [Coursier](https://get-coursier.io/), which will be very helpful when using [SBT](https://www.scala-sbt.org/).
+# Basic Steps
 
-The remainder of this README shows you how to build and test the provided examples using
- IntelliJ IDEA, SBT, and the command line.
+1. Download and install [Coursier](https://get-coursier.io/).
+2. Run `cs setup`. This installs a Java Development Kit (JDK), Scala 3 {{ Does it? }}, and support tools such as the Scala Build Tool ([SBT](https://www.scala-sbt.org/)).
+3. Install an Integrated Development Environment (ID): either IntelliJ IDEA or Visual Studio Code (VSCode).
+4. Install the Scala add-on for your IDE.
+5. Clone/download this repository.
+6. Open the `build.sbt` file in your IDE.
 
-TODO: Where will examples be posted?
-Exercises and solutions for the book can be found at
-[E.O.P. Examples](https://github.com/EffectOrientedProgramming/book/Examples).
+**Notes**
 
-**Note**: If any terminology or processes described here are still not clear to
+1. We assume you know how to use the Command-Line Interface (CLI) for your Operating System (OS: Windows, Mac or Linux). If you do not, you can find instructions [here](https://github.com/BruceEckel/AtomicKotlinExamples/blob/master/README.md#appendix-a-command-line-basics) (for [Atomic Kotlin](https://www.atomickotlin.com/), so Kotlin will be referenced).
+
+2. If any terminology or processes described here are still not clear to
 you, you can usually find explanations or answers through
 [Google](https://www.google.com/). For more specific issues or problems, try
 [StackOverflow](http://stackoverflow.com/). Sometimes you can find installation
