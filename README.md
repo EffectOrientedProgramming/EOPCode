@@ -46,7 +46,7 @@ instructions on [YouTube](https://www.youtube.com/).
 
 # Coursier
 
-[Coursier](https://get-coursier.io/docs/cli-overview) is the Scala installer tool that we use to ensure that a JVM and standard Scala tools are installed on your system.
+[Coursier](https://get-coursier.io/docs/cli-overview) is the Scala installer we use to ensure that a JVM and standard Scala tools are installed on your system.
 Further instructions are found [here](https://docs.scala-lang.org/scala3/getting-started.html).
 
 ## 1. Install Coursier
