@@ -121,47 +121,66 @@ Once installation is complete you can run a few simple tests to ensure the insta
 # Using SBT
 
 1. In a terminal, run the command:
-  > sbt
 
-This will open the sbt shell. From there, you can run the programs in your project.
+```
+> sbt
+```
+
+This opens the sbt shell. From there, you can run the programs in your project.
 
 2. Here are several useful commands when using the sbt shell:
 
+```
 > compile
+```
 
-* This command will compile all the files in the project you are in.
+* Compiles all the files in the project you are in.
 
+```
 > run
+```
 
-* This command will display a list of all executables in the project. In the comand prompt, input the
-index of the file to run.
+* Displays a list of all executables in the project. In the command prompt, input the index of the file to run.
 
+
+```
 > runMain (filename)
+```
 
-* This command will run the **Main** function in the file indicated.
+* Runs the **Main** function in the file indicated.
 * To run a program in a package, use the format **runMain packagename.mainName**
 
 
 For example, to run `helloWorld`, the main function of the HelloWorld object located in
 the directory `Examples`, input the following commands into the sbt shell:
 
->run
+```
+> run
 > (input the index of helloWorld)
->
+```
+
 or
->
+
+```
 > runMain helloWorld
+```
 
-Another useful trick is to use the `~` modification on any command. This modification
+Another useful trick is to precede any command with `~`. This modification
 will make sbt continuously run whatever you put it in front of. Whenever there is a change to the files,
-sbt will run the `~`'d command automatically.
+sbt will run the `~`'d command automatically. For example:
 
+```
 > ~runMain helloWorld
+```
 
-This will automatically run helloWorld whenever there is a change to the file system.
-Pressing enter into the command line will stop the automated command.
+Automatically runs `helloWorld` whenever there is a change to the file.
+Pressing enter stops the automated command.
 
-3. To exit the sbt shell, press **ctrl + d**
+3. To exit the sbt shell, press **ctrl + d**.
+
+# Install the Example Code
+
+Download the [zipped code repository](https://github.com/EffectOrientedProgramming/book/Examples) and unpack the archive.
 
 # Installing an IDE
 
@@ -170,18 +189,13 @@ Pressing enter into the command line will stop the automated command.
 1. Follow the instructions [here](https://www.jetbrains.com/help/idea/installation-guide.html)
    to install IntelliJ IDEA.
 
-2. Download the [zipped code
-   repository](https://github.com/EffectOrientedProgramming/book/Examples)
-   and [unzip it](#unpacking-a-zip-archive).
-
-3. Start IntelliJ IDEA, and select the `File | Open` menu item.  Navigate to
+2. Start IntelliJ IDEA, and select the `File | Open` menu item.  Navigate to
    where you unzipped the repository and open the `build.sbt` file.
 
-4. Go to the menu and select:
+3. Go to the menu and select:
    `View | Tool Windows | sbt`. Right-click the directory name, and reload the sbt project.
    This should ensure your machine has all necessary plugins and extensions installed.
 
 ## Visual Studio Code (VSCode)
 
 TBD
-
