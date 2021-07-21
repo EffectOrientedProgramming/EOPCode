@@ -5,6 +5,8 @@ If you want to experiment with the code examples from the book [Effect Oriented 
 These examples are automatically extracted directly from the book.
 This repository includes tests to verify that the code in the book is correct.
 
+* TODO: Run these instructions on a clean machine.
+
 # Contents
 
 - [Basic Steps](#basic-steps)
@@ -15,15 +17,22 @@ This repository includes tests to verify that the code in the book is correct.
     - [Macintosh](#macintosh)
     - [Linux](#linux)
   - [2. Update Coursier](#2-update-coursier)
-  - [3. Install Tools Using Coursier](#3-install-tools-using-coursier)
+  - [3. Use Coursier to Install the Tools](#3-use-coursier-to-install-the-tools)
 - [Using SBT](#using-sbt)
-- [Installing an IDE](#installing-an-ide)
+  - [Compiling](#compiling)
+  - [Running a Program](#running-a-program)
+  - [Repeating a Command](#repeating-a-command)
+  - [Exiting](#exiting)
+- [Install the Example Code](#install-the-example-code)
+- [Install an IDE](#install-an-ide)
   - [IntelliJ IDEA](#intellij-idea)
   - [Visual Studio Code (VSCode)](#visual-studio-code-vscode)
 
 ([TOC Generator](https://remarkablemark.org/blog/2020/12/06/markdown-table-of-contents-generator/)).
 
 # Basic Steps
+
+This is an overview of the setup process to use these examples. The following sections provide detailed instructions.
 
 1. Download and install [Coursier](https://get-coursier.io/).
 2. Run `cs setup`. This installs a Java Development Kit (JDK), Scala 3 {{ Does it? }}, and support tools such as the Scala Build Tool ([SBT](https://www.scala-sbt.org/)).
@@ -34,7 +43,7 @@ This repository includes tests to verify that the code in the book is correct.
 
 ## Notes
 
-1. We assume you know how to use the Command-Line Interface (CLI) for your Operating System (OS: Windows, Mac or Linux).
+1. We assume you know how to use the Command-Line Interface (CLI) for your Operating System (OS: Windows, Macintosh or Linux).
 If you do not, you can find instructions [here](https://github.com/BruceEckel/AtomicKotlinExamples/blob/master/README.md#appendix-a-command-line-basics).
 These instructions were written for [Atomic Kotlin](https://www.atomickotlin.com/), so Kotlin will be referenced.
 
@@ -75,14 +84,13 @@ Run the following commands:
 
 ### Linux
 
-We use `curl`.
-To install `curl`:
+First, install `curl`:
 
 ```
 > sudo apt install curl
 ```
 
-To install **Coursier**:
+Now use `curl` to install **Coursier**:
 
 ```
 > curl -fLo cs https://git.io/coursier-cli-"$(uname | tr LD ld)"
@@ -92,7 +100,6 @@ To install **Coursier**:
 ```
 
 ## 2. Update Coursier
-
 
 Once Coursier is installed, it can be updated with:
 
@@ -120,7 +127,7 @@ Once installation is complete you can run a few simple tests to ensure the insta
 
 # Using SBT
 
-1. In a terminal, run the command:
+In a terminal, run the command:
 
 ```
 > sbt
@@ -128,31 +135,31 @@ Once installation is complete you can run a few simple tests to ensure the insta
 
 This opens the sbt shell. From there, you can run the programs in your project.
 
-2. Here are several useful commands when using the sbt shell:
+## Compiling
+
+To compile all the files in the current project:
 
 ```
 > compile
 ```
 
-* Compiles all the files in the project you are in.
+## Running a Program
+
+To display a list of all executables in the project:
 
 ```
 > run
 ```
 
-* Displays a list of all executables in the project. In the command prompt, input the index of the file to run.
-
+In the command prompt, input the index of the file to run:
 
 ```
 > runMain (filename)
 ```
 
-* Runs the **Main** function in the file indicated.
-* To run a program in a package, use the format **runMain packagename.mainName**
-
-
+To run a program in a package, use the format **runMain packagename.mainName**.
 For example, to run `helloWorld`, the main function of the HelloWorld object located in
-the directory `Examples`, input the following commands into the sbt shell:
+the directory `Examples`, input the following to the sbt shell:
 
 ```
 > run
@@ -165,18 +172,21 @@ or
 > runMain helloWorld
 ```
 
-Another useful trick is to precede any command with `~`. This modification
-will make sbt continuously run whatever you put it in front of. Whenever there is a change to the files,
-sbt will run the `~`'d command automatically. For example:
+## Repeating a Command
+
+If you precede any command with `~`, sbt will automatically run that command whenever there is a change to the files.
+For example:
 
 ```
 > ~runMain helloWorld
 ```
 
-Automatically runs `helloWorld` whenever there is a change to the file.
+Will automatically runs `helloWorld` whenever there is a change to the file.
 Pressing enter stops the automated command.
 
-3. To exit the sbt shell, press **ctrl + d**.
+## Exiting
+
+To exit the sbt shell, press **ctrl + d**.
 
 # Install the Example Code
 
