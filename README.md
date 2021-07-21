@@ -102,7 +102,7 @@ Once Coursier is installed, it can be updated with:
 
 Do this periodically to make sure you have the latest Coursier version.
 
-## 3. Install Tools Using Coursier
+## 3. Use Coursier to Install the Tools
 
 This command installs the JDK, Scala 3, the SBT build tool, and several other tools:
 
@@ -182,7 +182,7 @@ Pressing enter stops the automated command.
 
 Download the [zipped code repository](https://github.com/EffectOrientedProgramming/book/Examples) and unpack the archive.
 
-# Installing an IDE
+# Install an IDE
 
 ## IntelliJ IDEA
 
