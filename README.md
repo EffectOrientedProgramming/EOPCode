@@ -1,4 +1,4 @@
-# Effect Oriented Programming Examples
+# Effect-Oriented Programming Book Examples
 
 If you want to experiment with the code examples from the book [Effect Oriented Programming](https://github.com/EffectOrientedProgramming/book), you're in the right place.
 
