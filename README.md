@@ -95,7 +95,7 @@ Now use `curl` to install **Coursier**:
 >cs
 ```
 Running the command ```cs``` should help you verify that Coursier is downloaded. 
-If the terminal disaplys a message saying that 'cs is not found', 
+If the terminal displays a message saying that 'cs is not found', 
 check the previous command. 
 
 If the terminal displays a message similar to:
@@ -103,7 +103,7 @@ If the terminal displays a message similar to:
 ```
 > Warning: /home/ExamplePath/Example/coursier/bin is not in your PATH
 ``` 
-Use this command, replacing the <Insert Path> with the path in the 
+Use this command, replacing the ```<Insert Path>``` with the path in the 
 above warning message. 
   
 ```
@@ -148,7 +148,7 @@ This command installs the JDK, Scala 3, the SBT build tool, and several other to
 > cs setup
 ```
 
-This may take a few minutes.
+This may take a few minutes. When prompted with a ```[Y/n]``` box, enter y for all options. 
 
 Once installation is complete you can run a few simple tests to ensure the installation was successful:
 
