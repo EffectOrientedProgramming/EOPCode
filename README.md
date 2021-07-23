@@ -92,9 +92,42 @@ Now use `curl` to install **Coursier**:
 
 ```
 > curl -fLo cs https://git.io/coursier-cli-"$(uname | tr LD ld)"
+>cs
+```
+Running the command ```cs``` should help you verify that Coursier is downloaded. 
+If the terminal disaplys a message saying that 'cs is not found', 
+check the previous command. 
+
+If the terminal displays a message similar to:
+
+```
+> Warning: /home/ExamplePath/Example/coursier/bin is not in your PATH
+``` 
+Use this command, replacing the <Insert Path> with the path in the 
+above warning message. 
+  
+```
+export PATH="$PATH:/<Insert Path>/coursier/bin"
+```
+
+  For example, if the warning message displays:
+  
+```
+> Warning: /home/bob/.local/share/coursier/bin is not in your PATH
+``` 
+  
+  Enter the following line:
+  
+```
+export PATH="$PATH:/home/bob/.local/share/coursier/bin"
+```
+
+Then enter these lines to give excecution access to Coursier, and install the 
+package:
+  
+```
 > chmod +x cs
 > ./cs install cs
-> rm cs
 ```
 
 ## 2. Update Coursier
