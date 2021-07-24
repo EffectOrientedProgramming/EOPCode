@@ -269,7 +269,9 @@ Download the [zipped code repository](https://github.com/EffectOrientedProgrammi
   ```
   Click on this. In the resulting dialog box, select "Create" and choose the latest Coursier version of Scala, which will be
   a version 2. The Dialog box will now look something like this:
+  
   ![image](https://user-images.githubusercontent.com/1001900/126879631-6490636e-7db5-4e4f-90c6-82292ff2569f.png)
+  
   Select "OK".
   
   
