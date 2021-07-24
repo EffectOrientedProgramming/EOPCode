@@ -55,7 +55,7 @@ instructions on [YouTube](https://www.youtube.com/).
 # Coursier
 
 [Coursier](https://get-coursier.io/docs/cli-overview) is the Scala installer we use to ensure that a JVM and standard Scala tools are installed on your system.
-Further instructions are found [here](https://docs.scala-lang.org/scala3/getting-started.html).
+Details are [here](https://docs.scala-lang.org/scala3/getting-started.html).
 
 ## 1. Install Coursier
 
@@ -92,37 +92,38 @@ Now use `curl` to install **Coursier**:
 
 ```
 > curl -fLo cs https://git.io/coursier-cli-"$(uname | tr LD ld)"
->cs
+> cs
 ```
-Running the command ```cs``` should help you verify that Coursier is downloaded. 
-If the terminal displays a message saying that 'cs is not found', 
+Running the `cs` command verifies that Coursier was installed. 
+If the terminal displays a message saying 'cs is not found', 
 check the previous command. 
 
-If the terminal displays a message similar to:
+If the terminal displays a message like:
 
 ```
-> Warning: /home/ExamplePath/Example/coursier/bin is not in your PATH
+Warning: /home/ExamplePath/Example/coursier/bin is not in your PATH
 ``` 
-Use this command, replacing the ```<Insert Path>``` with the path in the 
-above warning message. 
+
+Use the following command, replacing the `<Insert Path>` with the path from the 
+above warning message:
   
 ```
-export PATH="$PATH:/<Insert Path>/coursier/bin"
+> export PATH="$PATH:/<Insert Path>/coursier/bin"
 ```
 
-  For example, if the warning message displays:
+For example, if the warning message is:
   
 ```
-> Warning: /home/bob/.local/share/coursier/bin is not in your PATH
+Warning: /home/bob/.local/share/coursier/bin is not in your PATH
 ``` 
   
-  Enter the following line:
+Run this:
   
 ```
-export PATH="$PATH:/home/bob/.local/share/coursier/bin"
+> export PATH="$PATH:/home/bob/.local/share/coursier/bin"
 ```
 
-Then enter these lines to give excecution access to Coursier, and install the 
+Then enter these lines to give execute permission to Coursier, and install the 
 package:
   
 ```
@@ -148,7 +149,7 @@ This command installs the JDK, Scala 3, the SBT build tool, and several other to
 > cs setup
 ```
 
-This may take a few minutes. When prompted with a ```[Y/n]``` box, enter y for all options. 
+This may take a few minutes. When prompted with a `[Y/n]` query, enter y for all options. 
 
 Once installation is complete you can run a few simple tests to ensure the installation was successful:
 
@@ -168,7 +169,7 @@ This opens the sbt shell. From there, you can run the programs in your project.
 
 ## Compiling
 
-To compile all the files in the current project:
+To compile all the files in the current project, run the following inside the sbt shell:
 
 ```
 > compile
@@ -176,20 +177,22 @@ To compile all the files in the current project:
 
 ## Running a Program
 
+(All commands here are run from within the sbt shell)
+
 To display a list of all executables in the project:
 
 ```
 > run
 ```
 
-In the command prompt, input the index of the file to run:
+To run a specific program, use `runMain`:
 
 ```
-> runMain (filename)
+> runMain programName
 ```
 
-For example, to run `helloWorld`, the main function of the HelloWorld object located in
-the directory `Examples`, input the following to the sbt shell:
+For example, the main function of the `HelloWorld` object is located in
+the directory `Examples`. To run `helloWorld`:
 
 ```
 > run
@@ -213,7 +216,7 @@ For example:
 > ~runMain helloWorld
 ```
 
-automatically runs `helloWorld`.
+automatically runs `helloWorld` whenever any of that program's files change.
 Pressing the `ENTER` key stops the automated command.
 
 ## Exiting
