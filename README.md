@@ -21,7 +21,7 @@ This repository includes tests to verify that the code in the book is correct.
 - [Using SBT](#using-sbt)
   - [Compiling](#compiling)
   - [Running a Program](#running-a-program)
-  - [Repeating a Command](#repeating-a-command)
+  - [Automatic Command Execution](#automatic-command-execution)
   - [Exiting](#exiting)
 - [Install the Example Code](#install-the-example-code)
 - [Install an IDE](#install-an-ide)
@@ -149,13 +149,15 @@ This command installs the JDK, Scala 3, the SBT build tool, and several other to
 > cs setup
 ```
 
-This may take a few minutes. When prompted with a `[Y/n]` query, enter y for all options. 
+This may take a few minutes. When prompted with a `[Y/n]` query, enter `y` for all options. 
 
 Once installation is complete you can run a few simple tests to ensure the installation was successful:
 
-1. TEST 1 TBD
-2. TEST 2 TBD
-3. etc.
+1. java {{ show example output }}
+2. javac {{ show example output }}
+3. scala {{ show example output }}
+4. sbt --h {{not sure if that's right, dump the help screen, show example output }}
+5. {{ Other tests ... }}
 
 # Using SBT
 
@@ -207,7 +209,7 @@ or
 
 To run a program in a package, use the format **runMain packagename.mainName**.
 
-## Repeating a Command
+## Automatic Command Execution
 
 If you precede any command with `~`, sbt automatically runs that command whenever there is a change to the associated files.
 For example:
