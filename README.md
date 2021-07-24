@@ -36,7 +36,7 @@ This is an overview of the setup process to use these examples. The following se
 
 1. Download and install [Coursier](https://get-coursier.io/).
 2. Run `cs setup`. This installs a Java Development Kit (JDK), Scala 3 {{ Does it? }}, and support tools such as the Scala Build Tool ([SBT](https://www.scala-sbt.org/)).
-3. Install an Integrated Development Environment (ID): either IntelliJ IDEA or Visual Studio Code (VSCode).
+3. Install an Integrated Development Environment (IDE): either IntelliJ IDEA or Visual Studio Code (VSCode).
 4. Install the Scala add-on for your IDE.
 5. Clone/download this repository.
 6. Open the `build.sbt` file in your IDE.
@@ -123,7 +123,7 @@ Run this:
 > export PATH="$PATH:/home/bob/.local/share/coursier/bin"
 ```
 
-Then enter these lines to give execute permission to Coursier, and install the 
+Then enter these commands to give execute permission to Coursier and install the 
 package:
   
 ```
