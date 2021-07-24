@@ -250,7 +250,15 @@ Download the [zipped code repository](https://github.com/EffectOrientedProgrammi
 3. Go to the menu and select:
    `View | Tool Windows | sbt`. Right-click the directory name, and reload the sbt project.
    This should ensure your machine has all necessary plugins and extensions installed.
-
+   
+- If you get a message:
+  ```
+  Scalafmt configuration detected in this project
+    Use scalafmt formatter
+    Continue using IntelliJ formatter
+  ```
+  Select `Use scalafmt formatter`
+  
 ## Visual Studio Code (VSCode)
 
 TODO
