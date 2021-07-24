@@ -168,14 +168,20 @@ In a terminal, run the command:
 > sbt
 ```
 
-This opens the sbt shell. From there, you can run the programs in your project.
+This opens the sbt shell. For this project, the prompt will look like this:
+
+```
+sbt:EffectOrientedProgramming>
+```
+
+From here, you can run the programs in your project.
 
 ## Compiling
 
 To compile all the files in the current project, run the following inside the sbt shell:
 
 ```
-> compile
+sbt:EffectOrientedProgramming> compile
 ```
 
 ## Running a Program
@@ -185,27 +191,28 @@ To compile all the files in the current project, run the following inside the sb
 To display a list of all executables in the project:
 
 ```
-> run
+sbt:EffectOrientedProgramming> run
 ```
 
 To run a specific program, use `runMain`:
 
 ```
-> runMain programName
+sbt:EffectOrientedProgramming> runMain programName
 ```
 
 For example, the main function of the `HelloWorld` object is located in
 the directory `Examples`. To run `helloWorld`:
 
 ```
-> run
-> (input the index of helloWorld)
+sbt:EffectOrientedProgramming> run
+(sbt displays number list of main programs)
+Enter number: (input the index of helloWorld)
 ```
 
 or
 
 ```
-> runMain helloWorld
+sbt:EffectOrientedProgramming> runMain helloWorld
 ```
 
 To run a program in a package, use the format **runMain packagename.mainName**.
@@ -216,7 +223,7 @@ If you precede any command with `~`, sbt automatically runs that command wheneve
 For example:
 
 ```
-> ~runMain helloWorld
+sbt:EffectOrientedProgramming> ~runMain helloWorld
 ```
 
 automatically runs `helloWorld` whenever any of that program's files change.
