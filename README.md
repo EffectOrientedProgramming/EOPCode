@@ -6,6 +6,7 @@ These examples are automatically extracted directly from the book.
 This repository includes tests to verify that the code in the book is correct.
 
 * TODO: Run these instructions on a clean machine.
+* TODO: Complete pieces inside {{ markers }}.
 
 # Contents
 
