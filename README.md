@@ -272,7 +272,7 @@ Download the [zipped code repository](https://github.com/EffectOrientedProgrammi
   
   ![image](https://user-images.githubusercontent.com/1001900/126879631-6490636e-7db5-4e4f-90c6-82292ff2569f.png)
   
-  Select "OK". Now go to File | Project Structure and Choose Scala 3, like this:
+  Select "OK". Now go to `File | Project Structure | Global Libraries` and Choose Scala 3, like this:
   
   ![image](https://user-images.githubusercontent.com/1001900/126879808-1285e65e-e674-4a9b-9246-c86f86956e90.png)
 
