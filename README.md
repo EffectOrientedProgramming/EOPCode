@@ -132,17 +132,7 @@ package:
 > ./cs install cs
 ```
 
-## 2. Update Coursier
-
-Once Coursier is installed, it can be updated with:
-
-```
-> cs update cs
-```
-
-Do this periodically to make sure you have the latest Coursier version.
-
-## 3. Use Coursier to Install the Tools
+## 2. Use Coursier to Install the Needed Tools
 
 This command installs the JDK, Scala 3, the SBT build tool, and several other tools:
 
@@ -160,7 +150,17 @@ Once installation is complete you can run a few simple tests to ensure the insta
 4. sbt --h {{not sure if that's right, dump the help screen, show example output }}
 5. {{ Other tests ... }}
 
-# Using SBT
+ Update Coursier
+
+Once Coursier is installed, it can be updated with:
+
+```
+> cs update cs
+```
+
+Do this periodically to make sure you have the latest Coursier version.
+
+## 3. Using SBT
 
 In a terminal, run the command:
 
