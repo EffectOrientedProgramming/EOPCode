@@ -97,7 +97,14 @@ Now use `curl` to install **Coursier**:
 ```
 Running the `cs` command verifies that Coursier was installed. 
 If the terminal displays a message saying 'cs is not found', 
-check the previous command. 
+check the previous command. Otherwise, then enter these
+commands to give execute permission to Coursier and install the 
+package:
+  
+```
+> chmod +x cs
+> ./cs install cs
+```
 
 If the terminal displays a message like:
 
