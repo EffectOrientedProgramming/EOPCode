@@ -125,6 +125,8 @@ Run this:
 > export PATH="$PATH:/home/bob/.local/share/coursier/bin"
 ```
 
+You'll want to put a line like this in your `~/.bashrc`, as well.
+
 Then enter these commands to give execute permission to Coursier and install the
 package:
 
@@ -133,7 +135,7 @@ package:
 > ./cs install cs
 ```
 
-## 2. Use Coursier to Install the Needed Tools
+## 2. Use Coursier to Install the Required Tools
 
 This command installs the JDK, Scala 3, the SBT build tool, and several other tools:
 
