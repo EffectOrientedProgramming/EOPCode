@@ -83,24 +83,18 @@ Run the following commands:
 
 ### Linux
 
-First, install `curl`:
-
-```
-> sudo apt install curl
-```
-
-Now use `curl` to install **Coursier**:
+Use `curl` to install **Coursier**:
 
 ```
 > curl -fLo cs https://git.io/coursier-cli-"$(uname | tr LD ld)"
 > cs
 ```
-Running the `cs` command verifies that Coursier was installed. 
-If the terminal displays a message saying 'cs is not found', 
+Running the `cs` command verifies that Coursier was installed.
+If the terminal displays a message saying 'cs is not found',
 check the previous command. Otherwise, then enter these
-commands to give execute permission to Coursier and install the 
+commands to give execute permission to Coursier and install the
 package:
-  
+
 ```
 > chmod +x cs
 > ./cs install cs
@@ -110,30 +104,30 @@ If the terminal displays a message like:
 
 ```
 Warning: /home/ExamplePath/Example/coursier/bin is not in your PATH
-``` 
+```
 
-Use the following command, replacing the `<Insert Path>` with the path from the 
+Use the following command, replacing the `<Insert Path>` with the path from the
 above warning message:
-  
+
 ```
 > export PATH="$PATH:/<Insert Path>/coursier/bin"
 ```
 
 For example, if the warning message is:
-  
+
 ```
 Warning: /home/bob/.local/share/coursier/bin is not in your PATH
-``` 
-  
+```
+
 Run this:
-  
+
 ```
 > export PATH="$PATH:/home/bob/.local/share/coursier/bin"
 ```
 
-Then enter these commands to give execute permission to Coursier and install the 
+Then enter these commands to give execute permission to Coursier and install the
 package:
-  
+
 ```
 > chmod +x cs
 > ./cs install cs
@@ -147,7 +141,7 @@ This command installs the JDK, Scala 3, the SBT build tool, and several other to
 > cs setup
 ```
 
-This may take a few minutes. When prompted with a `[Y/n]` query, enter `y` for all options. 
+This may take a few minutes. When prompted with a `[Y/n]` query, enter `y` for all options.
 
 Once installation is complete you can run a few simple tests to ensure the installation was successful:
 
@@ -257,7 +251,7 @@ Download the [zipped code repository](https://github.com/EffectOrientedProgrammi
 3. Go to the menu and select:
    `View | Tool Windows | sbt`. Right-click the directory name, and reload the sbt project.
    This should ensure your machine has all necessary plugins and extensions installed.
-   
+
 - If you get a message:
   ```
   Scalafmt configuration detected in this project
@@ -265,7 +259,7 @@ Download the [zipped code repository](https://github.com/EffectOrientedProgrammi
     Continue using IntelliJ formatter
   ```
   Select `Use scalafmt formatter`
-  
+
 - When you open a Scala file in IntelliJ, you might get a message in the title bar of that file:
   ```
   No Scala SDK in module
@@ -276,14 +270,14 @@ Download the [zipped code repository](https://github.com/EffectOrientedProgrammi
   ```
   Click on this. In the resulting dialog box, select "Create" and choose the latest Coursier version of Scala, which will be
   a version 2. The Dialog box will now look something like this:
-  
+
   ![image](https://user-images.githubusercontent.com/1001900/126879631-6490636e-7db5-4e4f-90c6-82292ff2569f.png)
-  
+
   Select "OK". Now go to `File | Project Structure | Global Libraries` and Choose Scala 3, like this:
-  
+
   ![image](https://user-images.githubusercontent.com/1001900/126879808-1285e65e-e674-4a9b-9246-c86f86956e90.png)
 
-  
+
 ## Visual Studio Code (VSCode)
 
 TODO
