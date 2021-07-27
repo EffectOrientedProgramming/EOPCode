@@ -89,7 +89,9 @@ Use `curl` to install **Coursier**:
 > curl -fLo cs https://git.io/coursier-cli-"$(uname | tr LD ld)"
 > cs
 ```
-Running the `cs` command verifies that Coursier was installed.
+Running the `cs` command verifies that Coursier was installed. 
+Then open a fresh terminal before proceeding.
+
 If the terminal displays a message saying 'cs is not found',
 check the previous command. Otherwise, then enter these
 commands to give execute permission to Coursier and install the
