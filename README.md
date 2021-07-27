@@ -98,6 +98,7 @@ package:
 ```
 > chmod +x cs
 > ./cs install cs
+> eval "$(cs install --env)"
 ```
 
 If the terminal displays a message like:
@@ -133,6 +134,7 @@ package:
 ```
 > chmod +x cs
 > ./cs install cs
+> eval "$(cs install --env)"
 ```
 
 ## 2. Use Coursier to Install the Required Tools
