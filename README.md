@@ -17,17 +17,16 @@ This repository includes tests to verify that the code in the book is correct.
     - [Windows](#windows)
     - [Macintosh](#macintosh)
     - [Linux](#linux)
-  - [2. Update Coursier](#2-update-coursier)
-  - [3. Use Coursier to Install the Tools](#3-use-coursier-to-install-the-tools)
-- [Using SBT](#using-sbt)
-  - [Compiling](#compiling)
-  - [Running a Program](#running-a-program)
-  - [Automatic Command Execution](#automatic-command-execution)
-  - [Exiting](#exiting)
+  - [2. Use Coursier to Install the Required Tools](#2-use-coursier-to-install-the-required-tools)
+    - [Update Coursier](#update-coursier)
+  - [3. Using SBT](#3-using-sbt)
+    - [Compiling](#compiling)
+    - [Running a Program](#running-a-program)
+    - [Automatic Command Execution](#automatic-command-execution)
+    - [Exiting](#exiting)
+  - [4. Misc Recommendations](#4-misc-recommendations)
 - [Install the Example Code](#install-the-example-code)
-- [Install an IDE](#install-an-ide)
-  - [IntelliJ IDEA](#intellij-idea)
-  - [Visual Studio Code (VSCode)](#visual-studio-code-vscode)
+- [Install IntelliJ IDEA](#install-intellij-idea)
 
 ([TOC Generator](https://remarkablemark.org/blog/2020/12/06/markdown-table-of-contents-generator/)).
 
@@ -151,15 +150,41 @@ This command installs the JDK, Scala 3, the SBT build tool, and several other to
 
 This may take a few minutes. When prompted with a `[Y/n]` query, enter `y` for all options.
 
-Once installation is complete you can run a few simple tests to ensure the installation was successful:
+Once installation is complete, close the current shell and open a new one. 
+Now you can run a few simple tests to ensure the installation was successful:
 
-1. java {{ show example output }}
-2. javac {{ show example output }}
-3. scala {{ show example output }}
-4. sbt --h {{not sure if that's right, dump the help screen, show example output }}
-5. {{ Other tests ... }}
+1. `java -version`
+  Output will be something like:
+  ```text
+  java version "1.8.0_211"
+  Java(TM) SE Runtime Environment (build 1.8.0_211-b12)
+  Java HotSpot(TM) 64-Bit Server VM (build 25.211-b12, mixed mode)
+  ```
 
- Update Coursier
+2. `javac -version`
+  Output will be something like:
+  ```text
+  javac 1.8.0_211
+  ```
+
+3. `scalac -version`
+  Output will be something like:
+  ```text
+  Scala compiler version 2.13.6 -- Copyright 2002-2021, LAMP/EPFL and Lightbend, Inc.
+  ```
+
+4. `sbt help`
+  Output will be something like:
+  ```text
+  [info] welcome to sbt 1.5.5 (Oracle Corporation Java 1.8.0_211)
+  [info] loading settings for project book-build from plugins.sbt ...
+  [info] loading project definition from C:\Users\bruce\Documents\Git\book\projec
+  [info] loading settings for project book from build.sbt ...
+  [info] set current project to EffectOrientedProgramming
+  ...
+  ```
+
+### Update Coursier
 
 Once Coursier is installed, it can be updated with:
 
@@ -246,7 +271,7 @@ To exit the sbt shell, press **ctrl + d**.
 
 * Downloads can take a long time and might appear to be frozen, just wait it out.
 
-*  `eval "$(cs install --env)"`
+*  `eval "$(cs install --env)"` {{ What does this do? }}
 
 * If Java is already installed, you might be missing the JDK, so execute 
   this command to be sure:
@@ -262,9 +287,10 @@ To exit the sbt shell, press **ctrl + d**.
 
 Download the [zipped code repository](https://github.com/EffectOrientedProgramming/book/Examples) and unpack the archive.
 
-# Install an IDE
+# Install IntelliJ IDEA
 
-## IntelliJ IDEA
+We use IntelliJ IDEA to develop the examples in this book.
+You may use another environment such as VSCode but if you do you'll need to figure it out yourself.
 
 1. Follow the instructions [here](https://www.jetbrains.com/help/idea/installation-guide.html)
    to install IntelliJ IDEA.
@@ -301,7 +327,3 @@ Download the [zipped code repository](https://github.com/EffectOrientedProgrammi
 
   ![image](https://user-images.githubusercontent.com/1001900/126879808-1285e65e-e674-4a9b-9246-c86f86956e90.png)
 
-
-## Visual Studio Code (VSCode)
-
-TODO
