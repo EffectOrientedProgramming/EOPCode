@@ -53,6 +53,8 @@ These instructions were written for [Atomic Kotlin](https://www.atomickotlin.com
 [StackOverflow](http://stackoverflow.com/). Sometimes you can find installation
 instructions on [YouTube](https://www.youtube.com/).
 
+3. If after any installation step something doesn't seem to work, try closing your shell and opening a new one.
+
 # Coursier
 
 [Coursier](https://get-coursier.io/docs/cli-overview) is the Scala installer we use to ensure that a JVM and standard Scala tools are installed on your system.
@@ -183,7 +185,7 @@ sbt:EffectOrientedProgramming>
 
 From here, you can run the programs in your project.
 
-## Compiling
+### Compiling
 
 To compile all the files in the current project, run the following inside the sbt shell:
 
@@ -191,7 +193,7 @@ To compile all the files in the current project, run the following inside the sb
 sbt:EffectOrientedProgramming> compile
 ```
 
-## Running a Program
+### Running a Program
 
 (All commands here are run from within the sbt shell)
 
@@ -224,7 +226,7 @@ sbt:EffectOrientedProgramming> runMain helloWorld
 
 To run a program in a package, use the format **runMain packagename.mainName**.
 
-## Automatic Command Execution
+### Automatic Command Execution
 
 If you precede any command with `~`, sbt automatically runs that command whenever there is a change to the associated files.
 For example:
@@ -236,9 +238,25 @@ sbt:EffectOrientedProgramming> ~runMain helloWorld
 automatically runs `helloWorld` whenever any of that program's files change.
 Pressing the `ENTER` key stops the automated command.
 
-## Exiting
+### Exiting
 
 To exit the sbt shell, press **ctrl + d**.
+
+## 4. Misc Recommendations
+
+* Downloads can take a long time and might appear to be frozen, just wait it out.
+
+*  `eval "$(cs install --env)"`
+
+* If Java is already installed, you might be missing the JDK, so execute 
+  this command to be sure:
+
+  `cs java --jvm adopt:11 --setup`
+
+* Periodically update your exectuables by re-installing them, e.g.:
+
+  `cs install scalafmt`
+
 
 # Install the Example Code
 
