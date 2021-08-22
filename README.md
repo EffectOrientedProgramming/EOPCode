@@ -282,7 +282,7 @@ To exit the sbt shell, press **ctrl + d**.
 
 # Install the Example Code
 
-Download the [zipped code repository](https://github.com/EffectOrientedProgramming/book/Examples) and unpack the archive.
+Download the [zipped code repository](https://github.com/EffectOrientedProgramming/EOPCode) and unpack the archive.
 
 # Install IntelliJ IDEA
 
