@@ -88,10 +88,10 @@ Use `curl` to install **Coursier**:
 > cs
 ```
 Running the `cs` command verifies that Coursier was installed. 
-Then open a fresh terminal before proceeding.
+Now open a fresh terminal before proceeding.
 
 If the terminal displays a message saying 'cs is not found',
-check the previous command. Otherwise, then enter these
+check the previous command. Otherwise, enter these
 commands to give execute permission to Coursier and install the
 package:
 
@@ -183,7 +183,7 @@ Now you can run a few simple tests to ensure the installation was successful:
 
 ### Update Coursier
 
-Once Coursier is installed, it can be updated with:
+After Coursier is installed, it can be updated with:
 
 ```
 > cs update cs
@@ -266,7 +266,7 @@ To exit the sbt shell, press **ctrl + d**.
 
 ## 4. Misc Recommendations
 
-* Downloads can take a long time and might appear to be frozen, just wait it out.
+* Downloads can take a long time and might appear to be frozen. Just wait it out.
 
 *  `eval "$(cs install --env)"` {{ What does this do? }}
 
@@ -278,7 +278,6 @@ To exit the sbt shell, press **ctrl + d**.
 * Periodically update your exectuables by re-installing them, e.g.:
 
   `cs install scalafmt`
-
 
 # Install the Example Code
 
@@ -316,7 +315,7 @@ You may use another environment such as VSCode but if you do you'll need to figu
   Setup Scala SDK
   ```
   Click on this. In the resulting dialog box, select "Create" and choose the latest Coursier version of Scala, which will be
-  a version 2. The Dialog box will now look something like this:
+  version 2.x. The Dialog box will now look something like this:
 
   ![image](https://user-images.githubusercontent.com/1001900/126879631-6490636e-7db5-4e4f-90c6-82292ff2569f.png)
 
